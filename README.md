@@ -45,8 +45,9 @@ Whenever you make changes that you want to save, you should commit them.  Commit
 To commit your changes, do the following:  
 1. Check your current list of changes with `git status`
 2. Choose which changes to commit with `git add filename.ext`
-    - or save all the changes with `git add .` 
-    - or choose which changes to discard with `git rm filename.ext`
+    - or track all the changes with `git add .` 
+    - or untrack a tracked change with `git rm filename.ext`
+    - or choose which changes to discard with `git restore filename.ext`
 3. Commit your changes with `git commit -m "feat(scope): changes made"`
     - The commit message should be short yet descriptive
         - `docs: add example usage of FeatureName`
@@ -81,8 +82,9 @@ When you have committed changes, share them with the rest of the team. Always *f
     - Type `git fetch --verbose origin main` to get all the updates for just the main branch
     - Type `git fetch --verbose origin branch-name` to get only the updates for that branch
 3. Merge the fetched changes into your current branch.
-    - Type `git merge main` to get your current branch up-to-date with the main branch
+    - Type `git merge main` to get your current branch up-to-date with the fetched main branch
     - Type `git merge other-branch-name` to merge a different branch into your current branch
+    - Type `git merge origin/branch-name` to merge a branch from the origin repo into your current branch
 4. If there are conflicts, compare the changes and resolve them. Then start again from Step 1.
 5. If all is good and there are no more updates or conflicts, you can share with `git push origin branch-name`
 6. If you believe your changes should be put on the main branch, submit a new [Pull Request](https://github.com/nndiebold/sample-project/pulls). Your pull request should describe your changes and why you believe they belong on the main branch.

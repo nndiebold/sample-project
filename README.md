@@ -55,6 +55,7 @@ To commit your changes, do the following:
         - `feat: implement sortByTeam`
         - `fix: typo in homepage url`
         - `chore: remove unused files`
+        - `merge: other-branch into current-branch`
     - Add a scope to specify which part of the project your changes affect
         - `docs(spec): update to match changes from #54` (a specification changed due to #54 in the issue tracker)
         - `style(a11y): increase contrast between text and background` (a11y means accessibility)

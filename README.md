@@ -8,6 +8,7 @@ A simple code repository for getting started with git
 - [Write Descriptive Commits](#write-descriptive-commit-messages)
 - [Keep Your Working Branch Clean](#keep-your-working-branch-clean)
 - [Share Your Progress](#share-your-progress)
+- [Revert a Commit](#revert-a-commit)
 ---
 
 ## Instructions
@@ -89,4 +90,11 @@ When you have committed changes, share them with the rest of the team. Always *f
 4. If there are conflicts, compare the changes and resolve them. Then start again from Step 1.
 5. If all is good and there are no more updates or conflicts, you can share with `git push origin branch-name`
 6. If you believe your changes should be put on the main branch, submit a new [Pull Request](https://github.com/nndiebold/sample-project/pulls). Your pull request should describe your changes and why you believe they belong on the main branch.
+
+### Revert a Commit
+Sometimes things don't go as expected and you want to undo your commits. Perhaps a merge conflict could be avoided if you were to undo a recent commit.
+1. Type `git log -5` to see a list of the 5 most recent commits.  
+    - or use `git log` and press `Enter` to scroll through all the commits or `Q` to exit the log
+3. Type `git revert branch-name~0` to revert the most recent commit (or replace `0` with the number of the commit in the log)
+4. Type `git status` and clean up your working branch. See [Keep your working branch clean](#keep-your-working-branch-clean)
 

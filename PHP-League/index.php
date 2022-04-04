@@ -1,3 +1,8 @@
+<!--
+Work log
+4/03/22 - started working on step 1
+-->
+
 <DOCTYPE html>
 
 <html lang="en">

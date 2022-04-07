@@ -5,6 +5,7 @@ Created on 4/05/22
 -->
 
 <?php
+  require("class/Division.php");
 
   spl_autoload_register();
 

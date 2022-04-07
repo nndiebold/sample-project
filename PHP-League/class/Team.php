@@ -36,6 +36,11 @@ class Team {
         $this->division = $division;
       }
 
+    public function AddGame (Game $games)
+    {
+      $this->team_games[] = $games;
+    }
+
   }
 
 ?>

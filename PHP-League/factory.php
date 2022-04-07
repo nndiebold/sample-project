@@ -32,5 +32,8 @@ Created on 4/05/22
   $division->AddTeam($team1);
   $division->AddTeam($team2);
 
+  $team1->AddGame($game);
+  $team2->AddGame($game);
+
   print_r($game);
 ?>

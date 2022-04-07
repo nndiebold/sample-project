@@ -32,7 +32,11 @@ Work log for index.php
              <th> Venue </th>
           </tr>
           <tr>
-            <td> </td>
+            <td> Fri Feb 11 </td>
+            <td> 5PM </td>
+            <td> Golden Griffins @ Nighthawks </td>
+            <td> 6-32 </td>
+            <td> ROC </td>
           </tr>
       </table>
 
@@ -49,7 +53,12 @@ Work log for index.php
              <th> Score </th>
           </tr>
           <tr>
-            <td> </td>
+            <td> Sat Jan 15 </td>
+            <td> 5pm </td>
+            <td> Greyhounds </td>
+            <td> ROC </td>
+            <td> T </td>
+            <td> 12-12 </td>
           </tr>
       </table>
 
@@ -68,7 +77,14 @@ Work log for index.php
              <th> PA </th>
           </tr>
           <tr>
-            <td> </td>
+            <td> #1 </td>
+            <td> Nighthawks </td>
+            <td> 8 </td>
+            <td> 1 </td>
+            <td> 0 </td>
+            <td> .889 </td>
+            <td> 199 </td>
+            <td> 132 </td>
           </tr>
       </table>
 

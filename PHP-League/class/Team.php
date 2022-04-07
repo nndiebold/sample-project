@@ -12,18 +12,19 @@ if I am doing this correctly....
   Class Team {
 
     //name (String)
-    private $team_name;
+    private string $team_name;
 
     //games (Array of game objects for this team)
     private $team_games;
 
     //Stats object
-    private $stats;
+    private Stats $stats;
 
     public function __construct (
-      $team_name,
+      string $team_name,
       $team_games,
-      $stats)
+      //Stats is from Stats class
+      Stats $stats)
       {
         $this->team_name = $team_name;
         $this->team_games = $team_games;

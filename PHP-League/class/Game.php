@@ -9,32 +9,34 @@ Created on 4/05/22
   class Game {
 
     //datetime (datetime object)
-    private $datetime;
+    private DateTime $datetime;
 
     //home_team (team object)
-    private $home_team;
+    private Team $home_team;
 
     //home_score (integer)
-    private $home_score;
+    private int $home_score;
 
     //visitor_team (team object)
-    private $visitor_team;
+    private Team $visitor_team;
 
     //visitor_score (integer)
-    private $visitor_score;
+    private int $visitor_score;
 
     //venue (venue object)
-    private $venue;
+    private Venue $venue;
 
 
     public function __construct(
       //gives the current time
-      $datetime = time(),
-      $home_team = NULL,
-      $home_score = 0,
-      $visitor_team = NULL,
-      $visitor_score = 0,
-      $venue = NULL)
+      DateTime $datetime = time(),
+      //Team comes from Team class
+      Team $home_team = NULL,
+      int $home_score = 0,
+      Team $visitor_team = NULL,
+      int $visitor_score = 0,
+      //Venue comes from Venue Class
+      Venue $venue = NULL)
       {
         $this->datetime = $datetime;
         $this->home_team = $home_team;

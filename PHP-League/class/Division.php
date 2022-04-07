@@ -9,14 +9,14 @@ Created on 4/05/22
   Class Division {
 
     //name (String)
-    private $division_name;
+    private string $division_name;
 
 
     //teams (arrays of Team objects in this division)
     private $division_teams;
 
     public function __construct (
-      $division_name,
+      string $division_name,
       $division_teams)
       {
         $this->division_name = $division_name;

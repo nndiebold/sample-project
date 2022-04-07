@@ -3,19 +3,19 @@
 
   class Stats {
 
-    private $wins;
+    private int $wins;
 
-    private $losses;
+    private int $losses;
 
-    private $ties;
+    private int $ties;
 
-    private $win_percentage;
+    private float $win_percentage;
 
-    private $points_for;
+    private int $points_for;
 
-    private $points_against;
+    private int $points_against;
 
-    private $standing_score;
+    private int $standing_score;
 
     public function __construct (
       int $wins = 0,

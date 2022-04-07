@@ -9,14 +9,14 @@ Created on 4/05/22
   Class Venue {
 
     //name (string)
-    private $venue_name;
+    private string $venue_name;
 
-    //teams (Array of Team objecs in this division)
+    //games (Array of Team objects in this division)
     private $venue_games;
 
 
     public function __construct (
-      $venue_name,
+      string $venue_name,
       $venue_games)
       {
         $this->venue_name = $venue_name;

@@ -16,11 +16,11 @@ Created on 4/05/22
     private $division_teams;
 
     public function __construct (
-      string $division_name,
-      $division_teams)
+      string $division_name
+      )
       {
         $this->division_name = $division_name;
-        $this->division_teams = $division_teams;
+        $this->division_teams = array();
       }
 
 

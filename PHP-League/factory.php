@@ -13,17 +13,17 @@ Created on 4/05/22
 
   spl_autoload_register();
 
-  $division = new Division("Senior Boys", array());
+  $division = new Division("Senior Boys");
 
-  $venue = new Venue("ROC", array());
+  $venue = new Venue("ROC");
 
   $team1_stats = new Stats(4,3,0,150,150);
 
-  $team1 = new Team("Hawks", array() ,$team1_stats, $division);
+  $team1 = new Team("Hawks",$team1_stats, $division);
 
   $team2_stats = new Stats(1,5,1,150,120);
 
-  $team2 = new Team("Pigeons", array(), $team2_stats, $division);
+  $team2 = new Team("Pigeons", $team2_stats, $division);
 
   $date_time = new DateTime("2022/1/31 5pm");
 

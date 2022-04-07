@@ -16,11 +16,11 @@ Created on 4/05/22
 
 
     public function __construct (
-      string $venue_name,
-      $venue_games)
+      string $venue_name
+      )
       {
         $this->venue_name = $venue_name;
-        $this->venue_games = $venue_games;
+        $this->venue_games = array ();
       }
 
   }

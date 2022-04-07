@@ -25,14 +25,13 @@ class Team {
 
     public function __construct (
       string $team_name,
-      $team_games,
       //Stats is from Stats class
       Stats $stats,
       //from Division class
       Division $division)
       {
         $this->team_name = $team_name;
-        $this->team_games = $team_games;
+        $this->team_games = array();
         $this->stats = $stats;
         $this->division = $division;
       }

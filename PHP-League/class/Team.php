@@ -12,40 +12,23 @@ if I am doing this correctly....
   Class Team {
 
     //name (String)
-    $team_name = "";
-
+    private $team_name;
 
     //games (Array of game objects for this team)
-    $games = array();
+    private $team_games;
 
+    //Stats object
+    private $stats;
 
-    //stats (Associative array maping stat names to numbers)
-
-    /*
-    #Wins (integer)
-    $stats[0] = "";
-    #Losses (integer)
-    $stats[1] = "";
-    #Ties (integer)
-    $stats[2] = "";
-    #Win_percentage (float)
-    $stats[3] = "";
-    #Points_for (integer)
-    $stats[4] = "";
-    #points_against (integer)
-    $stats[5] = "";
-    #standing_score (integer)
-    $stats[6] = ""
-    */
-
-    $stats = array(
-      1 => $Win,
-      2 => $Loss,
-      3 => $Tie,
-      4 => $win_pct,
-      5 => $P_for,
-      6 => $P_Agnst,
-      7 => $Stnd_Sc);
+    public function __construct (
+      $team_name,
+      $team_games,
+      $stats)
+      {
+        $this->team_name = $team_name;
+        $this->team_games = $team_games;
+        $this->stats = $stats;
+      }
 
   }
 

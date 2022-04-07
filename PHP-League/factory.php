@@ -35,5 +35,7 @@ Created on 4/05/22
   $team1->AddGame($game);
   $team2->AddGame($game);
 
+  $venue->AddGameToVenue($game);
+
   print_r($game);
 ?>

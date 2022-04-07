@@ -23,6 +23,11 @@ Created on 4/05/22
         $this->venue_games = array ();
       }
 
+    public function AddGameToVenue(Game $game)
+    {
+      $this->venue_games[] = $game;
+    }
+
   }
 
 ?>

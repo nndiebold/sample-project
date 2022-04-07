@@ -17,11 +17,11 @@ Created on 4/05/22
 
   $venue = new Venue("ROC", array());
 
-  $team1_stats = new Stats(4,3,0,4/7,150,150,(4*2)+(3*0)+(0*1));
+  $team1_stats = new Stats(4,3,0,150,150);
 
   $team1 = new Team("Hawks", array() ,$team1_stats, $division);
 
-  $team2_stats = new Stats(1,5,1,1/5,150,120,(1*2)+(5*0)+(1*1));
+  $team2_stats = new Stats(1,5,1,150,120);
 
   $team2 = new Team("Pigeons", array(), $team2_stats, $division);
 

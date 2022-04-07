@@ -21,18 +21,17 @@
       int $wins = 0,
       int $losses = 0,
       int $ties = 0,
-      float $win_percentage = 0.0,
       int $points_for = 0,
-      int $points_against = 0,
-      int $standing_score = 0)
+      int $points_against = 0
+      )
       {
         $this->wins = $wins;
         $this->losses = $losses;
         $this->ties = $ties;
-        $this->win_percentage = $win_percentage;
+        $this->win_percentage = $wins/($wins+$losses+$ties);
         $this->points_for = $points_for;
         $this->points_against = $points_against;
-        $this->standing_score = $standing_score;
+        $this->standing_score = ($wins*2)+($ties*1)+($losses*0);
       }
 
   }

@@ -10,7 +10,9 @@
     </tr>
 
     <?php
-      print $game->ScheduleToHTML();
+      foreach($venue->GetGames() as $game) {
+        print $game->ScheduleToHTML();
+      }
     ?>
 
 </table>

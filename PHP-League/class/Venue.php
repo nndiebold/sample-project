@@ -33,6 +33,11 @@ Created on 4/05/22
       return $this->venue_name;
     }
 
+    public function GetGames ()
+    {
+      return $this->venue_games;
+    }
+
   }
 
 ?>

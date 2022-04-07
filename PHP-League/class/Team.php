@@ -20,15 +20,21 @@ if I am doing this correctly....
     //Stats object
     private Stats $stats;
 
+    //division object
+    private Division $division;
+
     public function __construct (
       string $team_name,
       $team_games,
       //Stats is from Stats class
-      Stats $stats)
+      Stats $stats,
+      //from Division class
+      Division $division)
       {
         $this->team_name = $team_name;
         $this->team_games = $team_games;
         $this->stats = $stats;
+        $this->division = $division;
       }
 
   }

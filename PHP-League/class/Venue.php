@@ -6,7 +6,7 @@ Created on 4/05/22
 
 <?php
 
-  Class Venue {
+  class Venue {
 
     //name (string)
     private string $venue_name;

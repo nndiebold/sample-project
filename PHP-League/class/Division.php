@@ -6,7 +6,7 @@ Created on 4/05/22
 
 <?php
 
-  Class Division {
+  class Division {
 
     //name (String)
     private string $division_name;

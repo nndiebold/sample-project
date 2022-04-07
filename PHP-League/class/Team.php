@@ -9,7 +9,7 @@ if I am doing this correctly....
 
 <?php
 
-  Class Team {
+class Team {
 
     //name (String)
     private string $team_name;

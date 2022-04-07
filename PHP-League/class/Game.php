@@ -46,6 +46,41 @@ Created on 4/05/22
         $this->venue = $venue;
       }
 
+    public function ScheduleToHTML ()
+    {
+
+      return
+
+      "<tr>
+        <td>
+          {$this->datetime->format("D M d Y")}
+        </td>
+        <td>
+          {$this->datetime->format("g A")}
+        </td>
+        <td>
+          {$this->visitor_team->GetName()} @ {$this->home_team->GetName()}
+        </td>
+        <td>
+          {$this->visitor_score} - {$this->home_score}
+        </td>
+        <td>
+          {$this->venue->GetName()}
+        </td>
+      </tr>";
+
+    }
+
+    public function GetDay ()
+    {
+      return $this->datetime->format("D M d Y");
+    }
+
+    public function GetTime ()
+    {
+      return $this->datetime->format("g A");
+    }
+
 
 
 

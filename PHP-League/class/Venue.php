@@ -28,6 +28,11 @@ Created on 4/05/22
       $this->venue_games[] = $game;
     }
 
+    public function GetName ()
+    {
+      return $this->venue_name;
+    }
+
   }
 
 ?>

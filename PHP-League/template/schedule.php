@@ -8,13 +8,11 @@
        <th> Score </th>
        <th> Venue </th>
     </tr>
-    <tr>
-      <td> Fri Feb 11 </td>
-      <td> 5PM </td>
-      <td> Golden Griffins @ Nighthawks </td>
-      <td> 6-32 </td>
-      <td> ROC </td>
-    </tr>
+
+    <?php
+      print $game->ScheduleToHTML();
+    ?>
+
 </table>
 
 <br /> <br />

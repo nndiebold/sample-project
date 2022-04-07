@@ -41,6 +41,11 @@ class Team {
       $this->team_games[] = $games;
     }
 
+    public function GetName ()
+    {
+      return $this->team_name;
+    }
+
   }
 
 ?>

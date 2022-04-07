@@ -23,6 +23,7 @@ Work log for index.php
     <main role="main">
 
       <?php
+        require("factory.php");
         require("template/schedule.php");
       ?>
 

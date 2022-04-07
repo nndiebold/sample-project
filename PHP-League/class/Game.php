@@ -9,33 +9,43 @@ Created on 4/05/22
   class Game {
 
     //datetime (datetime object)
-    public DateTime::format(String$format): string;
-
+    private $datetime;
 
     //home_team (team object)
-    public $home_team;
-
-    $home = new home_team;
-
+    private $home_team;
 
     //home_score (integer)
-    $home_score;
-
-    settype($home_Score, "integer");
-
+    private $home_score;
 
     //visitor_team (team object)
-    public $visitor_team;
-
-    $visitor = new visitor_team;
-
+    private $visitor_team;
 
     //visitor_score (integer)
-    $visitor_score;
-
+    private $visitor_score;
 
     //venue (venue object)
-    public $venue;
+    private $venue;
+
+
+    public function __construct(
+      //gives the current time
+      $datetime = time(),
+      $home_team = NULL,
+      $home_score = 0,
+      $visitor_team = NULL,
+      $visitor_score = 0,
+      $venue = NULL)
+      {
+        $this->datetime = $datetime;
+        $this->home_team = $home_team;
+        $this->home_score = $home_score;
+        $this->visitor_team = $visitor_team;
+        $this->visitor_score = $visitor_score;
+        $this->venue = $venue;
+      }
+
+
+
 
 
   }

@@ -29,7 +29,7 @@ Created on 4/05/22
 
     public function __construct(
       //gives the current time
-      DateTime $datetime = time(),
+      DateTime $datetime = NULL,
       //Team comes from Team class
       Team $home_team = NULL,
       int $home_score = 0,

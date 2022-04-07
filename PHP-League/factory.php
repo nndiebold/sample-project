@@ -29,5 +29,8 @@ Created on 4/05/22
 
   $game = new Game($date_time, $team1, 3, $team2, 2, $venue);
 
+  $division->AddTeam($team1);
+  $division->AddTeam($team2);
+
   print_r($game);
 ?>

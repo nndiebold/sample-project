@@ -23,6 +23,11 @@ Created on 4/05/22
         $this->division_teams = array();
       }
 
+    public function AddTeam (Team $team)
+    {
+      $this->division_teams[] = $team;    
+    }
+
 
   }
 

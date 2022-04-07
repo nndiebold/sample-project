@@ -6,6 +6,10 @@ Created on 4/05/22
 
 <?php
   require("class/Division.php");
+  require("class/Game.php");
+  require("class/Stats.php");
+  require("class/Team.php");
+  require("class/Venue.php");
 
   spl_autoload_register();
 
